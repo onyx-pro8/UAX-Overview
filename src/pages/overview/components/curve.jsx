@@ -2,7 +2,7 @@ import React from "react";
 
 const PriceCurveChart = () => {
     return (
-        <div className="text-white moblie:p-6 p-2 rounded-xl w-full max-w-3xl mx-auto">
+        <div className="text-white rounded-xl w-full max-w-3xl mx-auto">
             <svg viewBox="0 0 300 200" className="w-full h-40">
                 <path
                     d="M10 150 C 80 150, 160 100, 240 30"
@@ -21,7 +21,7 @@ const PriceCurveChart = () => {
 
             <div className="flex justify-between mt-4 text-center text-sm text-gray-300">
                 {["Stage 17", "Stage 17", "Stage 17", "Listing"].map((label, index) => (
-                    <div key={index}>
+                    <div key={index} className="chart-larbel">
                         <div>$ 0.01074</div>
                         <div>{label}</div>
                     </div>

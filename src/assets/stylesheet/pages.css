@@ -43,7 +43,11 @@
 }
 
 .box-work>div {
-    padding: 29px 21px 39px ;
+    padding: 29px 21px 39px;
+}
+
+.box-step>div {
+    padding: 33px 56px 45px;
 }
 
 .box.active>div {
@@ -76,7 +80,14 @@
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 12px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .Nr.large {
+    width: 40px;
+    height: 40px;
 }
 
 .box .progress {
@@ -150,5 +161,15 @@
 
     .box .progress {
         max-width: 180px;
+    }
+    .box-step>div {
+        padding: 18px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-larbel>div {
+        font-size: 12px;
+        font-weight: 300;
     }
 }

@@ -6,7 +6,7 @@ export const HowWork = () => {
     return (
         <div className="lg:w-1/2 w-full box box-work">
             <div className='flex flex-col'>
-                <span className="my-2 mx-4 min-content">
+                <span className="my-2 mx-4 text-[18px] min-content">
                     How it Works?
                 </span>
                 <div className='flex-between xl:flex-nowrap flex-wrap'>

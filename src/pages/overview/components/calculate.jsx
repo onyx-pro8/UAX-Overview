@@ -3,7 +3,7 @@ import React from "react";
 export const Calculate = () => {
     return (
         <div className='xl:w-1/2 w-full box'>
-            <div>
+            <div className="min-h-[428px]">
                 <div className="header">
                     <div className='px-5 flex-between'>
                         <span className='min-title'>Calculate This Profit</span>
