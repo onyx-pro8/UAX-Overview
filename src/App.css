@@ -4,12 +4,33 @@
   --border-color: #60606045;
 }
 
+/* Custom scrollbar styling */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1b1c26;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #413545;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #e22fff;
+}
+
+
 #root {
   background-image: url('./assets/media/layout/main\ bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: max-content;
+  min-height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -148,7 +169,7 @@ button.btn-ghost {
     height: 32px;
   }
 
-  .box .content .input {
+  .box .input {
     padding: 0 10px;
   }
 
