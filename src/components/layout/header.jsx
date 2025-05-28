@@ -32,11 +32,11 @@ export const Header = () => {
 
     return (
         <header className="w-full header">
-            <div className="flex-between">
-                <div className="title">
+            <div className="flex-between moblie:flex-nowrap flex-wrap moblie:gap-0 gap-2">
+                <div className="moblie:w-max w-full title">
                     <h1>{currentMenu?.content}</h1>
                 </div>
-                <div className="flex items-center">
+                <div className="moblie:w-max w-full flex items-center justify-end">
                     <NotificationIcon />
                     <ConnectWalletButton onClick={handleWalletConnect} />
                 </div>

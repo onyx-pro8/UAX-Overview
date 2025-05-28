@@ -2,7 +2,7 @@ import React from "react";
 
 export const Calculate = () => {
     return (
-        <div className='w-1/2 box'>
+        <div className='xl:w-1/2 w-full box'>
             <div>
                 <div className="header">
                     <div className='px-5 flex-between'>
@@ -29,7 +29,7 @@ export const Calculate = () => {
                     </div>
                 </div>
                 <div className="footer">
-                    <div className="p-[22px] flex-between">
+                    <div className="moblie:p-[22px] p-3 flex-between">
                         <div className='flex'>
                             <h6 className='text-[16px] font-light'>
                                 Stage: <span className='text-[20px] font-medium'>14</span>

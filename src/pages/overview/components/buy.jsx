@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Buy = () => {
     return (
-        <div className='w-1/2 box active'>
+        <div className='xl:w-1/2 w-full box active'>
             <div>
                 <div className="header">
                     <h2>Buy UAXN</h2>
@@ -23,7 +23,7 @@ export const Buy = () => {
                             <span className="min-title">Amount Raised</span>
                             <span className="min-content">$5,507,321.22</span>
                         </div>
-                        <div className='px-[19px] py-[9px] flex-center border-default'>
+                        <div className='moblie:px-[19px] px-2 moblie:py-[9px] py-2 flex-center border-default'>
                             <h6>
                                 Stage <span>14</span>
                             </h6>
@@ -36,7 +36,7 @@ export const Buy = () => {
                             <h6 className='text-[16px] font-light text-[#FFFFFFA6]'>Current Stage: <span>0.00K</span> / 12.35M</h6>
                         </div>
                         <div className="border-default flex-between switch">
-                            <div className="eth active">
+                            <div className="eth flex-center w-1/2 active">
                                 <h6 className='text-[16px] flex flex-center'>
                                     <i className='mr-2'>
                                         <img src="media/icons/eth.svg" alt="ETH" />
@@ -44,7 +44,7 @@ export const Buy = () => {
                                     ETH
                                 </h6>
                             </div>
-                            <div className="usdt">
+                            <div className="usdt flex-center w-1/2">
                                 <h6 className='text-[16px] flex flex-center'>
                                     <i className='mr-2'>
                                         <img src="media/icons/usdt.svg" alt="USDT" />
@@ -62,7 +62,7 @@ export const Buy = () => {
                     </div>
                 </div>
                 <div className="footer">
-                    <div className="p-[22px] flex-between">
+                    <div className="moblie:p-[22px] p-3 flex-between">
                         <span className='min-title'>Amount you’ll Get</span>
                         <span className='min-content'>0.00</span>
                     </div>

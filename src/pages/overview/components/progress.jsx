@@ -4,7 +4,7 @@ import PriceCurveChart from "./curve";
 
 export const Progress = () => {
     return (
-        <div className='w-1/2 box'>
+        <div className='xl:w-1/2 w-full box'>
             <div>
                 <div className="header">
                     <div className='px-5 flex-between'>

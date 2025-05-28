@@ -87,7 +87,7 @@
 }
 
 .box .content .switch>div {
-    padding: 7.5px 82px;
+    padding: 7.5px 0;
     cursor: pointer;
 }
 
@@ -98,4 +98,20 @@
 
 .box .footer {
     border-top: 1px solid var(--border-color);
+}
+
+
+@media (max-width: 768px) {
+
+    .main-page {
+        padding: 8px 12px;
+    }
+
+    .box>div {
+        padding: 0 16px 18px;
+    }
+
+    .box .progress {
+        max-width: 180px;
+    }
 }

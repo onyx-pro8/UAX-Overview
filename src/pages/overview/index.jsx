@@ -11,7 +11,7 @@ export const Overview = () => {
         <div className='flex flex-col'>
             <div className='flex flex-wrap w-full'>
                 <Buy />
-                <div className='w-1/2 flex flex-col'>
+                <div className='xl:w-1/2 w-full flex flex-col'>
                     <Total />
                     <Referral />
                 </div>

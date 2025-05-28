@@ -108,3 +108,42 @@ button.btn-ghost {
   width: 1px;
   background-color: #FFFFFF2B;
 }
+
+@media (max-width: 768px) {
+  button {
+    padding: 10px 14px !important;
+  }
+
+  .header .note {
+    width: 32px;
+    height: 32px;
+  }
+
+  .box .content .input {
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  span,
+  h6 {
+    font-size: 12px;
+  }
+
+  .box .header {
+    padding: 18px 14px;
+  }
+
+  .box .content {
+    padding: 20px 10px 10px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .center-line::after {
+    left: 45%;
+  }
+}

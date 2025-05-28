@@ -4,7 +4,7 @@ export const Referral = () => {
     return (
         <div className="box box-default">
             <div className='flex flex-col'>
-                <div className='flex flex-col p-[22px]'>
+                <div className='flex flex-col moblie:p-[22px] p-3'>
                     <span className='min-title'>Total Token Sold</span>
                     <h2 className='active'>0.00</h2>
                 </div>

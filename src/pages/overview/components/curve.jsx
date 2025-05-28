@@ -2,7 +2,7 @@ import React from "react";
 
 const PriceCurveChart = () => {
     return (
-        <div className="text-white p-6 rounded-xl w-full max-w-3xl mx-auto">
+        <div className="text-white moblie:p-6 p-2 rounded-xl w-full max-w-3xl mx-auto">
             <svg viewBox="0 0 300 200" className="w-full h-40">
                 <path
                     d="M10 150 C 80 150, 160 100, 240 30"
