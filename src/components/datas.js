@@ -20,5 +20,10 @@ export const datas = {
             link: '/profile',
             content: 'Profile'
         },
+    ],
+    howWork: [
+        'Connect your wallet and get your unique referral link to share with your friends & community.',
+        'When someone buys $UAXN with your link, their wallet is linked to you automatically.',
+        'Earn instant commission on every transaction via your link—rewards appear in your dashboard.'
     ]
 }

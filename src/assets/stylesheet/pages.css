@@ -38,6 +38,14 @@
     padding: 14px 34px 32px;
 }
 
+.box.box-large>div {
+    padding: 43px 39px 45px;
+}
+
+.box-work>div {
+    padding: 29px 21px 39px ;
+}
+
 .box.active>div {
     background-image: url('../media/box/active.png');
 }
@@ -57,6 +65,18 @@
 
 .box .content h2 {
     text-align: start;
+}
+
+.box .Nr {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #E22FFF;
+    color: #E22FFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
 .box .progress {
@@ -98,6 +118,23 @@
 
 .box .footer {
     border-top: 1px solid var(--border-color);
+}
+
+.intro {
+    padding: 12px 16px;
+}
+
+.intro::after {
+    content: '';
+    background-image: url('../media/layout/uax.png');
+    background-position: center center;
+    background-size: 100% 100%;
+    width: 20%;
+    height: 100%;
+    opacity: 10;
+    position: absolute;
+    right: -3%;
+    top: -25%;
 }
 
 

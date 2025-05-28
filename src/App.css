@@ -5,9 +5,11 @@
 }
 
 #root {
-  background: url('./assets/media/layout/main\ bg.svg');
+  background-image: url('./assets/media/layout/main\ bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  height: max-content;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -30,6 +32,10 @@ h1 {
   font-size: 26px;
 }
 
+h1.large {
+  font-size: 36px;
+}
+
 h2 {
   font-size: 22px;
   text-align: center;
@@ -49,8 +55,15 @@ h6 {
 }
 
 h6 span,
+h1 span,
 h2.active {
   color: #E22FFF;
+}
+
+p {
+  color: #FFFFFFA3;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 span {
@@ -109,6 +122,22 @@ button.btn-ghost {
   background-color: #FFFFFF2B;
 }
 
+@media (max-width: 1280px) {
+  h1.large {
+    font-size: 28px;
+  }
+
+  .your-referral .center-line::after {
+    left: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .your-referral .center-line::after {
+    left: 50%;
+  }
+}
+
 @media (max-width: 768px) {
   button {
     padding: 10px 14px !important;
@@ -144,6 +173,6 @@ button.btn-ghost {
 
 @media (max-width: 480px) {
   .center-line::after {
-    left: 45%;
+    left: 45% !important;
   }
 }
