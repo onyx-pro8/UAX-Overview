@@ -11,7 +11,7 @@ export const Progress = () => {
                         <span className='min-title'>Stage Progress</span>
                     </div>
                 </div>
-                <div className="flex flex-col content">
+                <div className="flex flex-col">
                     <div className="mb-7 flex-center">
                         <StageProgressChart />
                     </div>

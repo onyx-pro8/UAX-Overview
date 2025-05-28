@@ -6,7 +6,6 @@ import {
     YAxis,
     Tooltip,
     ResponsiveContainer,
-    Dot,
 } from "recharts";
 
 const data = [
@@ -41,9 +40,8 @@ const CustomDot = (props) => {
 export default function StageProgressChart() {
     return (
         <div className="p-4 rounded-2xl shadow-lg w-full text-white">
-            <h2 className="text-gray-400 mb-4 text-sm">Stage Progress</h2>
             <ResponsiveContainer width="100%" height={200}>
-                <LineChart data={data} margin={{ top: 10, right: 20, left: 20, bottom: 10 }}>
+                <LineChart data={data} margin={{ top: 10, right: 20, left: 20, bottom: 5 }}>
                     <XAxis dataKey="name" axisLine={false} tickLine={false} stroke="#6B7280" />
                     <YAxis hide domain={[0.0107, 0.01075]} />
                     <Tooltip
