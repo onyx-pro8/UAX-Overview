@@ -1,0 +1,37 @@
+.side-bar {
+    border-right: 1px solid #C4C4C414;
+}
+
+.side-bar .logo {
+    padding: 30px 0 0 41px;
+}
+
+.side-bar li {
+    border: 1px solid transparent;
+    transition: 0.4s;
+
+}
+
+.side-bar li.active {
+    background-color: #D9D9D90D;
+    border: 1px solid var(--border-color);
+}
+
+.side-bar li.active a {
+    color: var(--active-color);
+}
+
+.side-bar li a {
+    padding: 18px 40px;
+    color: var(--text-color);
+}
+
+.side-bar .border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0.5px solid var(--active-color);
+    height: 62px;
+    transition: 0.4s;
+    box-shadow: 0 0 4px var(--active-color);
+}

@@ -1,0 +1,101 @@
+.main-page {
+    padding: 36px 46px;
+    overflow: auto;
+}
+
+/* Custom scrollbar styling */
+.main-page::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-page::-webkit-scrollbar-track {
+    background: #1b1c26;
+    border-radius: 4px;
+}
+
+.main-page::-webkit-scrollbar-thumb {
+    background: #413545;
+    border-radius: 4px;
+}
+
+.main-page::-webkit-scrollbar-thumb:hover {
+    background: #e22fff;
+}
+
+.box {
+    padding: 14px 16px;
+}
+
+.box>div {
+    border-radius: 10px;
+    background-image: url('../media/box/box.png');
+    background-size: 100% 100%;
+    backdrop-filter: blur(150px);
+    padding: 0 22px 28px;
+}
+
+.box.box-default>div {
+    padding: 14px 34px 32px;
+}
+
+.box.active>div {
+    background-image: url('../media/box/active.png');
+}
+
+.box .header {
+    padding: 36px 0 28px;
+}
+
+.box .content {
+    padding: 30px 16px 16px;
+}
+
+.box .content .input {
+    padding: 6px 18px;
+    background-color: #1b1c26;
+}
+
+.box .content h2 {
+    text-align: start;
+}
+
+.box .progress {
+    height: 24px;
+    margin: 0 14px;
+    border-radius: 4px;
+    background-color: #311543;
+    width: 100%;
+    max-width: 282px;
+}
+
+.box .progress .success {
+    height: 100%;
+    width: 10px;
+    border-radius: 8px;
+    background-color: #e22fff;
+}
+
+.box .usdt i,
+.box .eth i {
+    width: 20px;
+    height: 20px;
+}
+
+.box .content .switch {
+    border-radius: 80px;
+    padding: 4px;
+}
+
+.box .content .switch>div {
+    padding: 7.5px 82px;
+    cursor: pointer;
+}
+
+.box .content .switch>div.active {
+    border-radius: 80px;
+    background-image: linear-gradient(#413545, #3C2B3F8C);
+}
+
+.box .footer {
+    border-top: 1px solid var(--border-color);
+}

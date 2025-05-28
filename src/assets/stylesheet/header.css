@@ -1,0 +1,15 @@
+.header {
+    padding: 27px 62px;
+}
+
+.header .note {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #282834;
+}
+
+.header,
+.header .note {
+    border-bottom: 1px solid var(--border-color);
+}

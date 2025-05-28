@@ -1,0 +1,110 @@
+:root {
+  --text-color: #B6B6B6;
+  --active-color: #DD30F9;
+  --border-color: #60606045;
+}
+
+#root {
+  background: url('./assets/media/layout/main\ bg.svg');
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
+h1,
+h2,
+button {
+  line-height: 1;
+  color: #fff;
+}
+
+h1,
+h2 {
+  font-weight: 500;
+}
+
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+h2.active {
+  font-size: 32px;
+  text-align: start;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 33.3px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+h6 span,
+h2.active {
+  color: #E22FFF;
+}
+
+span {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 33.3px;
+
+}
+
+span.min-title {
+  color: #FFFFFFA3;
+}
+
+span.min-content {
+  color: #fff;
+}
+
+button {
+  background-image: linear-gradient(to right, #D90EFA, #D90EFA, #9B07B3);
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 20px;
+}
+
+button.btn-ghost {
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #D90EFA;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border-default {
+  border: 1px solid #FFFFFF1A;
+  border-radius: 4px;
+}
+
+.center-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  background-color: #FFFFFF2B;
+}
