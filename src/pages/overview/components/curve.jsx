@@ -1,34 +1,73 @@
 import React from "react";
+import {
+    LineChart,
+    Line,
+    XAxis,
+    YAxis,
+    Tooltip,
+    ResponsiveContainer,
+    Dot,
+} from "recharts";
 
-const PriceCurveChart = () => {
+const data = [
+    { name: "Stage 17", price: 0.01074 },
+    { name: "Stage 17", price: 0.03074 },
+    { name: "Stage 17", price: 0.05074 },
+    { name: "Listing", price: 0.09074 },
+];
+
+const CustomDot = (props) => {
+    const { cx, cy, index } = props;
+    if (index === 0) {
+        return (
+            <circle
+                cx={cx}
+                cy={cy}
+                r={6}
+                stroke="#A855F7"
+                strokeWidth={2}
+                fill="#0D0B1E"
+            />
+        );
+    }
+    if (index === data.length - 1) {
+        return (
+            <circle cx={cx} cy={cy} r={4} fill="#A855F7" />
+        );
+    }
+    return null;
+};
+
+export default function StageProgressChart() {
     return (
-        <div className="text-white rounded-xl w-full max-w-3xl mx-auto">
-            <svg viewBox="0 0 300 200" className="w-full h-40">
-                <path
-                    d="M10 150 C 80 150, 160 100, 240 30"
-                    fill="none"
-                    stroke="#d946ef"
-                    strokeWidth="2"
-                    strokeDasharray="4 4"
-                />
-                <circle cx="10" cy="150" r="4" fill="#d946ef" />
-                <circle cx="80" cy="150" r="4" fill="#d946ef" />
-                <circle cx="160" cy="100" r="4" fill="#d946ef" />
-                <circle cx="240" cy="30" r="4" fill="#d946ef" />
-                <line x1="240" y1="30" x2="240" y2="10" stroke="#d946ef" strokeWidth="2" />
-                <circle cx="240" cy="10" r="4" fill="#d946ef" />
-            </svg>
-
-            <div className="flex justify-between mt-4 text-center text-sm text-gray-300">
-                {["Stage 17", "Stage 17", "Stage 17", "Listing"].map((label, index) => (
-                    <div key={index} className="chart-larbel">
-                        <div>$ 0.01074</div>
-                        <div>{label}</div>
+        <div className="p-4 rounded-2xl shadow-lg w-full text-white">
+            <h2 className="text-gray-400 mb-4 text-sm">Stage Progress</h2>
+            <ResponsiveContainer width="100%" height={200}>
+                <LineChart data={data} margin={{ top: 10, right: 20, left: 20, bottom: 10 }}>
+                    <XAxis dataKey="name" axisLine={false} tickLine={false} stroke="#6B7280" />
+                    <YAxis hide domain={[0.0107, 0.01075]} />
+                    <Tooltip
+                        formatter={(value) => [`$ ${value}`, ""]}
+                        contentStyle={{ backgroundColor: "#1F2937", borderColor: "#A855F7" }}
+                    />
+                    <Line
+                        type="monotone"
+                        dataKey="price"
+                        stroke="#A855F7"
+                        strokeWidth={2}
+                        dot={<CustomDot />}
+                        strokeDasharray="4 2"
+                    />
+                </LineChart>
+            </ResponsiveContainer>
+            <div className="mt-4 grid grid-cols-4 text-center text-xs text-gray-400">
+                {data.map((item, index) => (
+                    <div key={index}>
+                        <div className="text-white font-medium">$ {item.price}</div>
+                        <div>{item.name}</div>
                     </div>
                 ))}
             </div>
         </div>
     );
-};
-
-export default PriceCurveChart;
+}

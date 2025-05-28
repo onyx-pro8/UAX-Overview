@@ -1,6 +1,6 @@
 import React from "react";
 
-import PriceCurveChart from "./curve";
+import StageProgressChart from "./curve";
 
 export const Progress = () => {
     return (
@@ -13,7 +13,7 @@ export const Progress = () => {
                 </div>
                 <div className="flex flex-col content">
                     <div className="mb-7 flex-center">
-                        <PriceCurveChart />
+                        <StageProgressChart />
                     </div>
                 </div>
             </div>
