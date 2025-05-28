@@ -1,5 +1,5 @@
 .side-bar {
-    border-right: 1px solid #C4C4C414;
+    border-right: 1px solid var(--border-color);
     transition: transform 0.3s ease-in-out;
 }
 

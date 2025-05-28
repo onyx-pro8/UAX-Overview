@@ -3,6 +3,8 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { GlobalContext } from '../context/globalContext';
 
+import ThemeToggle from '../common/ThemeToggle';
+
 import { datas } from '../datas';
 import '../../assets/stylesheet/header.css';
 import { NotificationIcon } from '../common/notification';
@@ -37,6 +39,7 @@ export const Header = () => {
                     <h1>{currentMenu?.content}</h1>
                 </div>
                 <div className="moblie:w-max w-full flex items-center justify-end">
+                    <ThemeToggle />
                     <NotificationIcon />
                     <ConnectWalletButton onClick={handleWalletConnect} />
                 </div>

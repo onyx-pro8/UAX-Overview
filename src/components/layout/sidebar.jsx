@@ -1,8 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react';
+
 import PropTypes from 'prop-types';
 import { GlobalContext } from '../context/globalContext';
+
 import { datas } from '../datas';
+
 import { MenuItem } from '../common/menuItem';
+
 import '../../assets/stylesheet/sidebar.css';
 
 // Constants
@@ -57,7 +61,7 @@ export const SideBar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const getBorderTopPosition = () => {
-        
+
         const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
         console.log(isMobile);
         const itemHeight = isMobile ? MOBILE_ITEM_HEIGHT : DESKTOP_ITEM_HEIGHT;
@@ -80,7 +84,7 @@ export const SideBar = () => {
     return (
         <>
             <MobileMenuButton onClick={toggleMobileMenu} />
-            <div 
+            <div
                 className={`pr-[22px] h-full w-full max-w-[230px] side-bar ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}
             >
                 <div className='w-full flex flex-col'>

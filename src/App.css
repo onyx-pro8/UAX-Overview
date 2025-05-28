@@ -1,7 +1,47 @@
 :root {
-  --text-color: #B6B6B6;
+  --text-color: #555555;
   --active-color: #DD30F9;
-  --border-color: #60606045;
+  --font-color: #000;
+  --span-color: #353533;
+
+  --border-color: #bbb;
+  --border-light: #bbb;
+
+  --main-bg: #fff;
+  --main-image: #fff;
+  --switch-back: transparent;
+  --progress-back: #eeb3f7;
+  --input-back: transparent;
+  --input-hover: #ddd;
+
+  --box-image: #fff;
+  --box-image-active: #fff;
+
+  --scrollbar-color: #fff;
+  --box-shadow-active: 0 0 4px #e22fff;
+}
+
+[data-theme='dark'] {
+  --text-color: #353535;
+  --font-color: #fff;
+  --span-color: #FFFFFFA3;
+
+  --main-bg: #130B23;
+  --main-image: url('./assets/media/layout/main\ bg.svg') center center no-repeat;
+  --switch-back: linear-gradient(#413545, #3C2B3F8C);
+  --progress-back: #311543;
+  --input-back: #1b1c26;
+  --input-hover: #171821;
+
+  --box-image: url('./assets/media/box/box.png');
+  --box-image-active: url('./assets/media/box/active.png');
+
+  --scrollbar-color: #1b1c26;
+
+  --border-color: #ffffff36;
+  --border-light: transparent;
+  --box-shadow-active: none;
+
 }
 
 /* Custom scrollbar styling */
@@ -10,8 +50,9 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #1b1c26;
+  background: var(--scrollbar-color);
   border-radius: 4px;
+  border: 1px solid #1b1c26;
 }
 
 *::-webkit-scrollbar-thumb {
@@ -25,21 +66,25 @@
 
 
 #root {
-  background-image: url('./assets/media/layout/main\ bg.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--main-image);
   width: 100%;
-  height: max-content;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: auto;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  box-shadow: 0 0 4px #777;
 }
 
 h1,
 h2,
-button {
+button,
+button.btn-ghost {
   line-height: 1;
+  color: var(--font-color);
+}
+
+button {
   color: #fff;
 }
 
@@ -70,7 +115,7 @@ h2.active {
 h6 {
   font-size: 14px;
   line-height: 33.3px;
-  color: #fff;
+  color: var(--font-color);
   font-weight: 400;
   text-align: center;
 }
@@ -82,7 +127,7 @@ h2.active {
 }
 
 p {
-  color: #FFFFFFA3;
+  color: var(--span-color);
   font-size: 13px;
   font-weight: 300;
 }
@@ -95,11 +140,11 @@ span {
 }
 
 span.min-title {
-  color: #FFFFFFA3;
+  color: var(--span-color);
 }
 
 span.min-content {
-  color: #fff;
+  color: var(--font-color);
 }
 
 button {
@@ -129,7 +174,7 @@ button.btn-ghost {
 }
 
 .border-default {
-  border: 1px solid #FFFFFF1A;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
 }
 
@@ -140,7 +185,7 @@ button.btn-ghost {
   left: 50%;
   height: 100%;
   width: 1px;
-  background-color: #FFFFFF2B;
+  background-color: var(--border-color);
 }
 
 .recharts-cartesian-axis {
@@ -205,5 +250,6 @@ button.btn-ghost {
     line-height: 1;
     text-align: center;
     margin-bottom: 8px;
+    margin-top: 8px;
   }
 }

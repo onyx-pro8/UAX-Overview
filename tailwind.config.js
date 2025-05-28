@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
+    darkMode: 'class',
     theme: {
         extend: {},
-    },
-    plugins: [],
-    theme: {
         screens: {
             'miniMoblie': '380px',
             'moblie': '480px',
@@ -17,4 +15,5 @@ module.exports = {
             '2xl': '1536px',
         },
     },
+    plugins: [],
 }

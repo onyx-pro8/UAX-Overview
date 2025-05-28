@@ -5,7 +5,7 @@ import StageProgressChart from "./curve";
 export const Progress = () => {
     return (
         <div className='xl:w-1/2 w-full box'>
-            <div className="min-h-[428px]">
+            <div className="xl:min-h-[428px] min-h-auto">
                 <div className="header">
                     <div className='px-5 flex-between'>
                         <span className='min-title'>Stage Progress</span>
