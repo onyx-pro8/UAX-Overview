@@ -10,19 +10,16 @@ import { Profile } from "./profile";
 // Styles
 import '../assets/stylesheet/pages.css';
 
-export const Pages = () => {
-    return (
-        <div className="main-page">
-            <Routes>
-                {/* Default and Overview Routes */}
-                <Route path="/" element={<Overview />} />
-                <Route path="/overview" element={<Overview />} />
-                
-                {/* Feature Routes */}
-                <Route path="/referral" element={<Referral />} />
-                <Route path="/howtobuy" element={<HowToBuy />} />
-                <Route path="/profile" element={<Profile />} />
-            </Routes>
-        </div>
-    );
-};
+export const Pages = () =>
+    <div className="main-page">
+        <Routes>
+            {/* Default and Overview Routes */}
+            <Route path="/" element={<Overview />} />
+            <Route path="/overview" element={<Overview />} />
+
+            {/* Feature Routes */}
+            <Route path="/referral" element={<Referral />} />
+            <Route path="/howtobuy" element={<HowToBuy />} />
+            <Route path="/profile" element={<Profile />} />
+        </Routes>
+    </div>
